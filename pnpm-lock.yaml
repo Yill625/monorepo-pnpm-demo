@@ -4,21 +4,22 @@ importers:
 
   .:
     specifiers:
+      '@vitejs/plugin-vue': ^3.1.0
       typescript: ^4.8.3
+      vite: ^3.1.0
+      vue: ^3.2.37
+    dependencies:
+      vue: 3.2.39
     devDependencies:
+      '@vitejs/plugin-vue': 3.1.0_vite@3.1.3+vue@3.2.39
       typescript: 4.8.3
+      vite: 3.1.3
 
   packages/http:
     specifiers:
       axios: ^0.27.2
     dependencies:
       axios: 0.27.2
-
-  packages/pc:
-    specifiers:
-      '@monorepo-pnpm-demo/http': workspace:^1.0.0
-    dependencies:
-      '@monorepo-pnpm-demo/http': link:../http
 
   packages/web:
     specifiers:
